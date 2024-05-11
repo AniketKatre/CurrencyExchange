@@ -1,8 +1,7 @@
 {
   "name": "currency_exchnage",
-  "homepage": "https://AniketKatre.github.io/CurrencyExchange",
   "version": "1.0.0",
-  "description": "",
+  "description": "this exchnage currency application",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
