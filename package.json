@@ -1,13 +1,17 @@
 {
-  "name": "backend",
+  "name": "currency_exchnage",
+  "homepage": "https://AniketKatre.github.io/CurrencyExchange",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node --watch backend/app.js",
+    
     "devops": "npm run dev --prefix frontend",
-    "devprod": "concurrently \"npm run server\" \"npm run devops\" "
+    "devprod": "concurrently \"npm run server\" \"npm run devops\" ",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +23,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-rate-limit": "^7.2.0",
+    "gh-pages": "^6.1.1",
     "nodemon": "^3.1.0"
   }
 }
