@@ -9,8 +9,7 @@
     "server": "node --watch backend/app.js",
     "devops": "npm run dev --prefix frontend",
     "devprod": "concurrently \"npm run server\" \"npm run devops\" ",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "",
