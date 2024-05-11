@@ -13,6 +13,7 @@ const App = () => {
         <CurrencyConvert />
       </main>
       <Footers />
+      {/* //footer */}
     </>
   );
 };
