@@ -33,7 +33,7 @@ app.post("/api/convert", async (req, res) => {
   try {
     //get the user data
     const { from, to, amount } = req.body;
-    console.log({ from, to, amount });
+    // console.log({ from, to, amount });
 
     // construct the api:
     const url = `${API_URL}/${API_KEY}/pair/${from}/${to}/${amount}`;

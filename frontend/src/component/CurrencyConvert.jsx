@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../index.css";
+import { Loader } from "./Loader";
 
 export const CurrencyConvert = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +15,7 @@ export const CurrencyConvert = () => {
   const currencyCodes = [
     "USD",
     "AED",
+    "INR",
     "AUD",
     "BDT",
     "BRL",
@@ -25,7 +27,6 @@ export const CurrencyConvert = () => {
     "JPY",
     "CAD",
     "BSD",
-    "INR",
   ];
 
   const handleChange = (e) => {
@@ -45,7 +46,9 @@ export const CurrencyConvert = () => {
         "http://localhost:5000/api/convert",
         formData
       );
+
       setResult(response?.data);
+
       setError("");
     } catch (error) {
       setError(
@@ -97,6 +100,7 @@ export const CurrencyConvert = () => {
             Convert
           </button>
         </form>
+
         {result && (
           <div className="result">
             <p>
