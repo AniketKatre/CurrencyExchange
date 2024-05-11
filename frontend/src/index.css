@@ -99,7 +99,7 @@ body {
 
 footer{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: fixed;
+  margin-top: 30px;
   width: 100%;
   text-align: center;
   bottom: 0;
